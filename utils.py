@@ -1,31 +1,12 @@
-from json import decoder
-from logging.config import valid_ident
-from re import match, sub
 import re
-from turtle import color
-from wsgiref.validate import PartialIteratorWrapper
-from allennlp.data.tokenizers import tokenizer
-from allennlp.data.tokenizers import pretrained_transformer_tokenizer
-from pandas._config.config import describe_option
-from scipy import rand
-from transformers import AutoTokenizer, AutoModel
-from transformers import BertTokenizerFast
-import pickle
-from allennlp.data.tokenizers.pretrained_transformer_tokenizer import (
-    PretrainedTransformerTokenizer,
-)
 import random
 import json
 import pandas as pd
-from transformers.utils.dummy_pt_objects import DataCollator
-import torch
 import os
 import numpy as np
 import matplotlib.pyplot as plt
 from matplotlib.ticker import FuncFormatter
 from datetime import date, datetime
-from sklearn import metrics
-
 from MemVul.util import replace_tokens_simple
 
 
